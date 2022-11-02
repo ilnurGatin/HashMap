@@ -28,5 +28,21 @@ public class Main {
 
         System.out.println(phoneBook);
 
+        //Task 3
+
+        TaskThree taskThree = new TaskThree();
+        taskThree.addData("два", 2);
+        taskThree.addData("три", 3);
+        taskThree.addData("четыре", 4);
+        taskThree.addData("пять", 5);
+        taskThree.addData("шесть", 6);
+
+        System.out.println(taskThree);
+
+        taskThree.addData("семь", 7);
+        taskThree.addData("пять", 1);
+
+        System.out.println(taskThree);
+
     }
 }

@@ -1,4 +1,4 @@
-import java.util.HashMap;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -43,6 +43,26 @@ public class Main {
         taskThree.addData("пять", 1);
 
         System.out.println(taskThree);
+
+        //Task 3.2
+
+        TaskThreePointTwo taskThreePointTwo = new TaskThreePointTwo();
+        List newList = taskThreePointTwo.addDataToList(3);
+
+        taskThreePointTwo.addDataToMap(newList);
+        System.out.println(taskThreePointTwo);
+
+        Map<String, Integer> taskThreePointTwo2 = new HashMap<>();
+        taskThreePointTwo2.put("newList", taskThreePointTwo.sumOfNumbers(taskThreePointTwo.getNewList()));
+        System.out.println(taskThreePointTwo2);
+
+        //Task3.2.2
+
+        Map<Integer, String> map = new HashMap<>();
+        for (int i = 1; i <= 10; i++) {
+            map.put(i, "str" + i);
+            System.out.println("" + i + ":" + map.get(i));
+        }
 
     }
 }
